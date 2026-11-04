@@ -1,0 +1,39 @@
+# DocuMind .gitignore
+
+# Python / Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# Environment Variables
+.env
+*.env
+
+# Testing & Linting
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local SQLite databases & FAISS indexes
+*.db
+documind.db
+data/sessions/
+data/raw/*.pdf
+!data/raw/DATA_SOURCES.md
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
