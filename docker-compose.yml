@@ -1,0 +1,40 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: documind-api
+    ports:
+      - "8000:8000"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+      - EMBED_MODEL=all-MiniLM-L6-v2
+      - LLM_BACKEND=mock
+      - DATABASE_URL=sqlite:///documind.db
+      - DATA_DIR=/app/data/sessions
+    volumes:
+      - ./data/sessions:/app/data/sessions
+      - ./documind.db:/app/documind.db
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  ui:
+    build:
+      context: .
+      dockerfile: Dockerfile.ui
+    container_name: documind-ui
+    ports:
+      - "8501:8501"
+    environment:
+      - API_BASE_URL=http://api:8000
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  session_data:
+
