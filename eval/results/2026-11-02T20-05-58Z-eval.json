@@ -1,0 +1,164 @@
+{
+  "timestamp": "2026-11-02T20:05:58.033761+00:00",
+  "total_queries": 20,
+  "in_corpus_queries": 10,
+  "probe_queries": 10,
+  "recall_at_5": 0.8,
+  "mrr": 0.8,
+  "refusal_precision": 1.0,
+  "p50_latency_ms": 77.9,
+  "p95_latency_ms": 125.18,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "details": [
+    {
+      "id": "q01",
+      "type": "in_corpus",
+      "question": "What is the primary cause of covariate shift in production ML?",
+      "hit_at_5": true,
+      "rank": 1,
+      "refused": false
+    },
+    {
+      "id": "q02",
+      "type": "in_corpus",
+      "question": "How is Population Stability Index (PSI) used to detect feature shifts?",
+      "hit_at_5": true,
+      "rank": 1,
+      "refused": false
+    },
+    {
+      "id": "q03",
+      "type": "in_corpus",
+      "question": "What threshold of PSI requires model retraining?",
+      "hit_at_5": false,
+      "rank": 0,
+      "refused": true
+    },
+    {
+      "id": "q04",
+      "type": "in_corpus",
+      "question": "How do residual connections prevent vanishing gradients in deep networks?",
+      "hit_at_5": true,
+      "rank": 1,
+      "refused": false
+    },
+    {
+      "id": "q05",
+      "type": "in_corpus",
+      "question": "What does the Adam optimizer compute for each parameter?",
+      "hit_at_5": true,
+      "rank": 1,
+      "refused": false
+    },
+    {
+      "id": "q06",
+      "type": "in_corpus",
+      "question": "What representations do convolutional neural networks extract?",
+      "hit_at_5": true,
+      "rank": 1,
+      "refused": false
+    },
+    {
+      "id": "q07",
+      "type": "in_corpus",
+      "question": "Summarize how data drift is monitored in machine learning pipelines.",
+      "hit_at_5": true,
+      "rank": 1,
+      "refused": false
+    },
+    {
+      "id": "q08",
+      "type": "in_corpus",
+      "question": "What happens when concept drift occurs in deployed models?",
+      "hit_at_5": true,
+      "rank": 1,
+      "refused": false
+    },
+    {
+      "id": "q09",
+      "type": "in_corpus",
+      "question": "What is considered a stable PSI value according to the documentation?",
+      "hit_at_5": false,
+      "rank": 0,
+      "refused": true
+    },
+    {
+      "id": "q10",
+      "type": "in_corpus",
+      "question": "What mathematical operation does backpropagation perform?",
+      "hit_at_5": true,
+      "rank": 1,
+      "refused": false
+    },
+    {
+      "id": "p01",
+      "type": "probe",
+      "question": "What are the key ingredients for authentic French croissants?",
+      "refused": true,
+      "correct": true
+    },
+    {
+      "id": "p02",
+      "type": "probe",
+      "question": "Who was the prime minister of the United Kingdom in 1912?",
+      "refused": true,
+      "correct": true
+    },
+    {
+      "id": "p03",
+      "type": "probe",
+      "question": "How do you calibrate an internal combustion engine carburetor?",
+      "refused": true,
+      "correct": true
+    },
+    {
+      "id": "p04",
+      "type": "probe",
+      "question": "What is the optimal sowing season for basmati rice in Punjab?",
+      "refused": true,
+      "correct": true
+    },
+    {
+      "id": "p05",
+      "type": "probe",
+      "question": "What is the orbital velocity of the International Space Station?",
+      "refused": true,
+      "correct": true
+    },
+    {
+      "id": "p06",
+      "type": "probe",
+      "question": "How do you configure an Apache Kafka cluster for cross-region replication?",
+      "refused": true,
+      "correct": true
+    },
+    {
+      "id": "p07",
+      "type": "probe",
+      "question": "What were the diplomatic terms of the Treaty of Versailles?",
+      "refused": true,
+      "correct": true
+    },
+    {
+      "id": "p08",
+      "type": "probe",
+      "question": "How do you repair a leaky kitchen faucet with a ceramic disc?",
+      "refused": true,
+      "correct": true
+    },
+    {
+      "id": "p09",
+      "type": "probe",
+      "question": "What are the rules for castling in international chess?",
+      "refused": true,
+      "correct": true
+    },
+    {
+      "id": "p10",
+      "type": "probe",
+      "question": "What is the molecular formula for caffeine?",
+      "refused": true,
+      "correct": true
+    }
+  ]
+}
