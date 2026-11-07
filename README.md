@@ -1,6 +1,7 @@
 # DocuMind — Enterprise Document RAG & Hybrid Retrieval Fusion
 
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code Style: Ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
 [![Type Checked: Mypy](https://img.shields.io/badge/type%20checked-mypy-blue.svg)](https://github.com/python/mypy)
 [![Tests: Pytest](https://img.shields.io/badge/tests-12%2F12%20passing-brightgreen.svg)](https://docs.pytest.org/)
